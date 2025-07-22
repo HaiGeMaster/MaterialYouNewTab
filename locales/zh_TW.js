@@ -151,6 +151,8 @@ const zh_TW = {
     // Theme
     "enableDarkMode": "深色模式（實驗性）",
     "enableDarkModeInfo": "啟用深色模式主題",
+    "enableAutoMode": "自動模式（實驗性）",
+    "enableAutoModeInfo": "根據系統主題自動切換深色模式",
 
     // Wallpaper and settings
     "uploadWallpaperText": "上傳桌布",

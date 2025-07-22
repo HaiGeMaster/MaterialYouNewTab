@@ -53,7 +53,7 @@ function toggleSearchEngines(category) {
     };
     const checkeditem = localStorage.getItem(`selectedSearchEngine-${category}`) || defaultItems[category];
     const searchModeName = category === "search-with" ? "searchWithHint" : "searchOnHint";
-    searchWith.innerText = translations[currentLanguage][searchModeName] || translations["en"][searchModeName];
+    searchWith.innerText = translations[currentLanguage][searchModeName] || translations["zh"][searchModeName];
 
     searchEngines.forEach(engine => {
         if (engine.getAttribute("data-category") === category) {
@@ -192,7 +192,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function performSearch() {
         var selectedOption = document.querySelector('input[name="search-engine"]:checked').value;
         var searchTerm = searchInput.value;
-        const languageCode = (localStorage.getItem("selectedLanguage") || "en").slice(0, 2);
+        const languageCode = (localStorage.getItem("selectedLanguage") || "zh").slice(0, 2);
         var searchEngines = {
             engine1: "https://www.google.com/search?q=",
             engine2: "https://duckduckgo.com/?q=",

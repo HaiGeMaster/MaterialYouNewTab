@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // Set the default language to English if no language is saved
-    const savedLang = localStorage.getItem("selectedLanguage") || "en";
+    const savedLang = localStorage.getItem("selectedLanguage") || "zh";
     applyLanguage(savedLang);
 
     // Load the stored text if it exists
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
         userTextDiv.textContent = storedValue;
     } else {
         // Fallback to the placeholder based on the selected language
-        const placeholder = userTextDiv.dataset.placeholder || translations["en"].userText; // Fallback to English
+        const placeholder = userTextDiv.dataset.placeholder || translations["zh"].userText; // Fallback to English
         userTextDiv.textContent = placeholder;
     }
 

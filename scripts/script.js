@@ -323,6 +323,67 @@ document.addEventListener("DOMContentLoaded", function () {
   loadCheckboxState("enableDarkModeCheckboxState", enableDarkModeCheckbox);
 });
 
+//自动主题
+document.addEventListener("DOMContentLoaded", function () {
+  // Darkmode
+  const enableAutoModeCheckbox = document.getElementById(
+    "enableAutoModeCheckbox"
+  );
+
+  const enableDarkModeCheckbox = document.getElementById(
+    "enableDarkModeCheckbox"
+  );
+
+  const enableDarkModeDiv = document.getElementById('enableDarkModeDiv');
+
+  //始终监听主题变化
+  window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", function (e) {
+    console.log('handleSystemThemeChange', e.matches);
+
+    if (enableAutoModeCheckbox.checked) {
+      enableDarkModeCheckbox.checked = e.matches;
+      saveCheckboxState("enableDarkModeCheckboxState", enableDarkModeCheckbox);
+      loadCheckboxState("enableDarkModeCheckboxState", enableDarkModeCheckbox);
+    }
+  })
+
+  enableAutoModeCheckbox.addEventListener("change", function () {
+    console.log('enableAutoModeCheckbox', enableAutoModeCheckbox.checked);
+    if (enableAutoModeCheckbox.checked) {
+      //让enableDarkModeDiv隐藏
+      enableDarkModeDiv.style.display = 'none';
+    } else {
+      //让enableDarkModeDiv显示
+      enableDarkModeDiv.style.display = 'flex';
+    }
+    saveCheckboxState("enableAutoModeCheckbox", enableAutoModeCheckbox);
+  });
+
+  const localStorage_enableAutoModeCheckbox = localStorage.getItem("enableAutoModeCheckbox") === 'false';
+  console.log(localStorage_enableAutoModeCheckbox);
+  if (!localStorage_enableAutoModeCheckbox) {
+    enableAutoModeCheckbox.checked = !localStorage_enableAutoModeCheckbox;
+    saveCheckboxState("enableAutoModeCheckbox", enableAutoModeCheckbox);
+  }
+  // enableAutoModeCheckbox.change()
+
+  loadCheckboxState("enableAutoModeCheckbox", enableAutoModeCheckbox);
+
+  if (enableAutoModeCheckbox.checked) {
+    //让enableDarkModeDiv隐藏
+    enableDarkModeDiv.style.display = 'none';
+  } else {
+    //让enableDarkModeDiv显示
+    enableDarkModeDiv.style.display = 'flex';
+  }
+
+});
+
+
+enableAutoModeCheckbox.addEventListener("change", function () {
+  saveCheckboxState("enableAutoModeCheckbox", enableAutoModeCheckbox);
+});
+
 //------------------------- LoadingScreen -----------------------//
 
 function ApplyLoadingColor() {
@@ -345,7 +406,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const adjustZoomInfo = document.getElementById("adjustZoomInfo");
   let adjustZoomInfoText =
     translations[currentLanguage]?.adjustZoomInfo ||
-    translations["en"].adjustZoomInfo;
+    translations["zh"].adjustZoomInfo;
   if (isMac) {
     adjustZoomInfoText = adjustZoomInfoText.replace(/Ctrl/g, "⌘");
   }
@@ -358,19 +419,19 @@ document.addEventListener("DOMContentLoaded", function () {
   if (isFirefoxAll) {
     changeBrowserThemeInfo.innerHTML =
       translations[currentLanguage]?.firefoxThemeInfo ||
-      translations["en"].firefoxThemeInfo;
+      translations["zh"].firefoxThemeInfo;
   } else if (isEdge) {
     changeBrowserThemeInfo.innerHTML =
       translations[currentLanguage]?.edgeThemeInfo ||
-      translations["en"].edgeThemeInfo;
+      translations["zh"].edgeThemeInfo;
   } else if (isBrave) {
     changeBrowserThemeInfo.innerHTML =
       translations[currentLanguage]?.braveThemeInfo ||
-      translations["en"].braveThemeInfo;
+      translations["zh"].braveThemeInfo;
   } else {
     changeBrowserThemeInfo.innerHTML =
       translations[currentLanguage]?.chromeThemeInfo ||
-      translations["en"].chromeThemeInfo;
+      translations["zh"].chromeThemeInfo;
   }
 
   const firefoxHomepage = document.getElementById("firefoxHomepage");
@@ -381,7 +442,7 @@ document.addEventListener("DOMContentLoaded", function () {
     firefoxHomepage.style.display = "block";
     updateFirefoxHomepageInfo.innerHTML =
       translations[currentLanguage]?.updateFirefoxHomepageInfo ||
-      translations["en"].updateFirefoxHomepageInfo;
+      translations["zh"].updateFirefoxHomepageInfo;
   }
 
   // Hide tips
@@ -468,7 +529,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Sync styles
       item.style.textAlign = isRTL ? "right" : "left";
       item.style.direction = isRTL ? "rtl" : "ltr";
-      
+
       // Sync classes
       if (isRTL) {
         item.classList.add("text-right", "rtl");

@@ -309,7 +309,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     event.preventDefault();
                     event.stopPropagation();
 
-                    const confirmMessage = (translations[currentLanguage]?.deleteBookmark || translations["en"].deleteBookmark)
+                    const confirmMessage = (translations[currentLanguage]?.deleteBookmark || translations["zh"].deleteBookmark)
                         .replace("{title}", node.title || node.url);
 
                     if (await confirmPrompt(confirmMessage)) {

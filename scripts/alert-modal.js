@@ -55,10 +55,10 @@ function alertPrompt(message, isAlert = true, okText, cancelText) {
 
         // Default button text with translations
         if (isAlert) {
-            okText = okText || translations[currentLanguage]?.okText || translations["en"].okText;
+            okText = okText || translations[currentLanguage]?.okText || translations["zh"].okText;
         } else {
-            okText = okText || translations[currentLanguage]?.yesText || translations["en"].yesText;
-            cancelText = cancelText || translations[currentLanguage]?.noText || translations["en"].noText;
+            okText = okText || translations[currentLanguage]?.yesText || translations["zh"].yesText;
+            cancelText = cancelText || translations[currentLanguage]?.noText || translations["zh"].noText;
         }
 
         // Create OK button
@@ -148,7 +148,7 @@ function confirmPrompt(message, okText, cancelText) {
     return alertPrompt(message, false, okText, cancelText);
 }
 
-const agreeText = translations[currentLanguage]?.agreeText || translations["en"].agreeText;
-const cancelText = translations[currentLanguage]?.cancelText || translations["en"].cancelText;
-//const saveText = translations[currentLanguage]?.saveAPI || translations["en"].saveAPI;
-//const deleteText = translations[currentLanguage]?.deleteText || translations["en"].deleteText;
+const agreeText = translations[currentLanguage]?.agreeText || translations["zh"].agreeText;
+const cancelText = translations[currentLanguage]?.cancelText || translations["zh"].cancelText;
+//const saveText = translations[currentLanguage]?.saveAPI || translations["zh"].saveAPI;
+//const deleteText = translations[currentLanguage]?.deleteText || translations["zh"].deleteText;

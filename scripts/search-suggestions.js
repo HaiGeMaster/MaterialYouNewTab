@@ -68,7 +68,7 @@ function hideResultBox() {
 showResultBox();
 hideResultBox();
 
-const languageCode = (localStorage.getItem("selectedLanguage") || "en").slice(0, 2);
+const languageCode = (localStorage.getItem("selectedLanguage") || "zh").slice(0, 2);
 document.getElementById("searchQ").addEventListener("input", async function () {
     const searchsuggestionscheckbox = document.getElementById("searchsuggestionscheckbox");
     if (searchsuggestionscheckbox.checked) {
@@ -282,7 +282,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // This function shows the proxy disclaimer.
     async function showProxyDisclaimer() {
-        const message = translations[currentLanguage]?.ProxyDisclaimer || translations["en"].ProxyDisclaimer;
+        const message = translations[currentLanguage]?.ProxyDisclaimer || translations["zh"].ProxyDisclaimer;
         return await confirmPrompt(message, agreeText, cancelText);
     }
 

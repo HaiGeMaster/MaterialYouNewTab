@@ -8,7 +8,7 @@
 
 
 // Get the current language from localStorage
-const currentLanguage = localStorage.getItem("selectedLanguage") || "en";
+const currentLanguage = localStorage.getItem("selectedLanguage") || "zh";
 const isRTL = rtlLanguages.includes(currentLanguage);
 
 // ------------Showing & Hiding Menu-bar ---------------

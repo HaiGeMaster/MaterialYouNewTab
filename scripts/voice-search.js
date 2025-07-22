@@ -58,7 +58,7 @@ micIconCheckbox.addEventListener("change", () => {
 function initializeSpeechRecognition() {
     const searchInput = document.getElementById("searchQ");
     const resultBox = document.getElementById("resultBox");
-    const currentLanguage = getLanguageStatus("selectedLanguage") || "en";
+    const currentLanguage = getLanguageStatus("selectedLanguage") || "zh";
 
     // Check if the browser supports SpeechRecognition API
     const isSpeechRecognitionAvailable = "webkitSpeechRecognition" in window || "SpeechRecognition" in window;
@@ -80,7 +80,7 @@ function initializeSpeechRecognition() {
                 micIcon.style.color = "var(--darkerColor-blue)";
                 // micIcon.style.transform = "scale(1.05)";
             }
-            searchInput.placeholder = `${translations[currentLanguage]?.listenPlaceholder || translations["en"].listenPlaceholder}`;
+            searchInput.placeholder = `${translations[currentLanguage]?.listenPlaceholder || translations["zh"].listenPlaceholder}`;
             micIcon.classList.add("micActive");
         };
 
@@ -113,7 +113,7 @@ function initializeSpeechRecognition() {
             micIcon.style.color = "var(--darkColor-blue)"; // Reset mic color
             // micIcon.style.transform = "scale(1)"; // Reset scaling
             micIcon.classList.remove("micActive");
-            searchInput.placeholder = `${translations[currentLanguage]?.searchPlaceholder || translations["en"].searchPlaceholder}`;
+            searchInput.placeholder = `${translations[currentLanguage]?.searchPlaceholder || translations["zh"].searchPlaceholder}`;
         };
 
         // Start speech recognition when mic icon is clicked

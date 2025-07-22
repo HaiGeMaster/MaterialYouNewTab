@@ -151,6 +151,8 @@ const en = {
     // Theme
     "enableDarkMode": "Dark Mode (Experimental)",
     "enableDarkModeInfo": "Enable dark mode themes",
+    "enableAutoMode": "Auto Mode (Experimental)",
+    "enableAutoModeInfo": "Enable auto mode themes",
 
     // Wallpaper and settings
     "uploadWallpaperText": "Upload Wallpaper",    // Keep this short

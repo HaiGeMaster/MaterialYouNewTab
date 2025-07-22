@@ -42,7 +42,7 @@ async function backupData() {
 
         console.log("Backup completed successfully!");
     } catch (error) {
-        await alertPrompt((translations[currentLanguage]?.failedbackup || translations["en"].failedbackup) + error.message);
+        await alertPrompt((translations[currentLanguage]?.failedbackup || translations["zh"].failedbackup) + error.message);
     }
 }
 
@@ -58,16 +58,16 @@ async function validateAndRestoreData(event) {
 
             // Validate the structure of the JSON file
             if (!isValidBackupFile(backup)) {
-                await alertPrompt(translations[currentLanguage]?.invalidBackup || translations["en"].invalidBackup);
+                await alertPrompt(translations[currentLanguage]?.invalidBackup || translations["zh"].invalidBackup);
                 return;
             }
 
             await restoreData(backup);
 
-            await alertPrompt(translations[currentLanguage]?.restorecompleted || translations["en"].restorecompleted);
+            await alertPrompt(translations[currentLanguage]?.restorecompleted || translations["zh"].restorecompleted);
             location.reload();
         } catch (error) {
-            await alertPrompt(translations[currentLanguage]?.restorefailed || translations["en"].restorefailed + error.message);
+            await alertPrompt(translations[currentLanguage]?.restorefailed || translations["zh"].restorefailed + error.message);
         }
     };
     reader.readAsText(file);
@@ -185,7 +185,7 @@ const resetbtn = document.getElementById("resetsettings");
 
 // Clear localStorage and reload the page
 resetbtn.addEventListener("click", async () => {
-    const confirmationMessage = translations[currentLanguage]?.confirmRestore || translations["en"].confirmRestore;
+    const confirmationMessage = translations[currentLanguage]?.confirmRestore || translations["zh"].confirmRestore;
 
     if (await confirmPrompt(confirmationMessage)) {
         localStorage.clear();

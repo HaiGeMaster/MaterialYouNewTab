@@ -351,10 +351,14 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log('enableAutoModeCheckbox', enableAutoModeCheckbox.checked);
     if (enableAutoModeCheckbox.checked) {
       //让enableDarkModeDiv隐藏
-      enableDarkModeDiv.style.display = 'none';
+      // enableDarkModeDiv.style.display = 'none';
+      //让enableDarkModeDiv添加inactive类以禁用
+      enableDarkModeDiv.classList.add('inactive');
     } else {
       //让enableDarkModeDiv显示
-      enableDarkModeDiv.style.display = 'flex';
+      // enableDarkModeDiv.style.display = 'flex';
+      //移除enableDarkModeDiv的inactive类以启用
+      enableDarkModeDiv.classList.remove('inactive');
     }
     saveCheckboxState("enableAutoModeCheckbox", enableAutoModeCheckbox);
   });
@@ -371,10 +375,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (enableAutoModeCheckbox.checked) {
     //让enableDarkModeDiv隐藏
-    enableDarkModeDiv.style.display = 'none';
+    // enableDarkModeDiv.style.display = 'none';
+    //让enableDarkModeDiv添加inactive类以禁用
+    enableDarkModeDiv.classList.add('inactive');
   } else {
     //让enableDarkModeDiv显示
-    enableDarkModeDiv.style.display = 'flex';
+    // enableDarkModeDiv.style.display = 'flex';
+    //移除enableDarkModeDiv的inactive类以启用
+    enableDarkModeDiv.classList.remove('inactive');
   }
 
 });

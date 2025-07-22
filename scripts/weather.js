@@ -55,12 +55,12 @@ async function getWeatherData() {
   // Display texts
   document.getElementById("conditionText").textContent =
     translations[currentLanguage]?.conditionText ||
-    translations["zh"].conditionText;
+    translations["en"].conditionText;
   document.getElementById("humidityLevel").textContent =
     translations[currentLanguage]?.humidityLevel ||
-    translations["zh"].humidityLevel;
+    translations["en"].humidityLevel;
   document.getElementById("location").textContent =
-    translations[currentLanguage]?.location || translations["zh"].location;
+    translations[currentLanguage]?.location || translations["en"].location;
 
   // Cache DOM elements
   const userAPIInput = document.getElementById("userAPI");
@@ -84,8 +84,8 @@ async function getWeatherData() {
   minMaxTempCheckbox.checked = isMinMaxEnabled;
 
   document.getElementById("feelsLike").textContent = isMinMaxEnabled
-    ? translations[currentLanguage]?.minMaxTemp || translations["zh"].minMaxTemp
-    : translations[currentLanguage]?.feelsLike || translations["zh"].feelsLike;
+    ? translations[currentLanguage]?.minMaxTemp || translations["en"].minMaxTemp
+    : translations[currentLanguage]?.feelsLike || translations["en"].feelsLike;
 
   // Function to simulate button click on Enter key press
   function handleEnterPress(event, buttonId) {
@@ -115,7 +115,7 @@ async function getWeatherData() {
     if (gpsToggle.checked) {
       const message =
         translations[currentLanguage]?.GPSDisclaimer ||
-        translations["zh"].GPSDisclaimer;
+        translations["en"].GPSDisclaimer;
       const confirmGPS = await confirmPrompt(message, agreeText, cancelText);
 
       if (!confirmGPS) {
@@ -504,7 +504,7 @@ async function getWeatherData() {
         // Set humidity level
         const humidityLabel =
           translations[currentLanguage]?.humidityLevel ||
-          translations["zh"].humidityLevel;
+          translations["en"].humidityLevel;
         document.getElementById("humidityLevel").textContent = isRTL
           ? `${humidityLabel} %${localizedHumidity}` // RTL: "76% ytidimuH"
           : `${humidityLabel} ${localizedHumidity}%`;
@@ -517,7 +517,7 @@ async function getWeatherData() {
           const feelsLikeElement = document.getElementById("feelsLike");
           const feelsLikeLabel =
             translations[currentLanguage]?.feelsLike ||
-            translations["zh"].feelsLike;
+            translations["en"].feelsLike;
 
           // List of languages where a space before °F or °C is required
           const langWithSpaceBeforeDegree = ["cs"];
@@ -684,7 +684,7 @@ async function getWeatherData() {
         };
         const slider = document.getElementById("slider");
         slider.style.minWidth =
-          humidityMinWidth[currentLanguage] || humidityMinWidth["zh"];
+          humidityMinWidth[currentLanguage] || humidityMinWidth["en"];
 
         // Set slider width based on humidity
         if (humidity > 40) {

@@ -22,7 +22,7 @@ const aiToolsRaw = [
 // Translations for AI tools
 const aiTools = aiToolsRaw.map(tool => ({
     ...tool,
-    label: translations[currentLanguage]?.[tool.id] || translations["zh"][tool.id]
+    label: translations[currentLanguage]?.[tool.id] || translations["en"][tool.id]
 }));
 
 // DOM Elements

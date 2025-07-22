@@ -245,7 +245,7 @@ function applyLanguage(lang) {
                 // Use "key" if defined, otherwise use "id" as the translation key
                 const key = item.key || item;
                 // Get the translation, fallback to English if not found in the current language
-                const translation = translations[lang]?.[key] || translations["zh"]?.[key];
+                const translation = translations[lang]?.[key] || translations["en"]?.[key];
 
                 // Apply the translation to either placeholder or innerText
                 if (isPlaceholder) {
@@ -265,7 +265,7 @@ function applyLanguage(lang) {
     // For userText
     const userTextDiv = document.getElementById("userText");
     if (translations[lang]) {
-        const placeholder = translations[lang]?.userText || translations["zh"].userText;
+        const placeholder = translations[lang]?.userText || translations["en"].userText;
         userTextDiv.dataset.placeholder = placeholder; // Update the placeholder in data attribute
         // Only set the text content if there's nothing in localStorage
         if (!localStorage.getItem("userText")) {
@@ -276,15 +276,15 @@ function applyLanguage(lang) {
     // Update hover text for #menuCloseButton
     const menuCloseButton = document.getElementById("menuCloseButton");
     if (menuCloseButton) {
-        const hoverText = translations[lang]?.menuCloseText || translations["zh"].menuCloseText;
+        const hoverText = translations[lang]?.menuCloseText || translations["en"].menuCloseText;
         menuCloseButton.setAttribute("data-lang", hoverText);
     }
 
     // Update the width of the menu container based on the language
     const menuCont = document.querySelector(".menuBar .menuCont");
     if (menuCont) {
-        menuCont.style.width = menuWidths[lang] || menuWidths["zh"];
-        let widthh = window.innerWidth / parseInt(menuWidths[lang] || menuWidths["zh"]);
+        menuCont.style.width = menuWidths[lang] || menuWidths["en"];
+        let widthh = window.innerWidth / parseInt(menuWidths[lang] || menuWidths["en"]);
         if (window.innerWidth < 476) {
             let menuStyle = document.getElementById("menuStyle") || document.createElement("style");
             menuStyle.id = "menuStyle";
@@ -351,7 +351,7 @@ document.getElementById("languageSelector").addEventListener("change", (event) =
 
 // Function to apply the language when the page loads
 window.onload = function () {
-    const savedLanguage = getLanguageStatus("selectedLanguage") || "zh"; // Default language is English
+    const savedLanguage = getLanguageStatus("selectedLanguage") || "en"; // Default language is English
     document.getElementById("languageSelector").value = savedLanguage;
     applyLanguage(savedLanguage);
 };

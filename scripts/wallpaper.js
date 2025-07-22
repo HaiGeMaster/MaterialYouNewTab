@@ -104,7 +104,7 @@ const RANDOM_IMAGE_URL = "https://picsum.photos/1920/1080";
 
 async function applyRandomImage(showConfirmation = true) {
     if (showConfirmation && !(await confirmPrompt(
-        translations[currentLanguage]?.confirmWallpaper || translations["zh"].confirmWallpaper
+        translations[currentLanguage]?.confirmWallpaper || translations["en"].confirmWallpaper
     ))) {
         return;
     }
@@ -196,11 +196,11 @@ document.getElementById("clearImage").addEventListener("click", async function (
     try {
         const [blob] = await loadImageAndDetails();
         if (!blob) {
-            await alertPrompt(translations[currentLanguage]?.Nobackgroundset || translations["zh"].Nobackgroundset);
+            await alertPrompt(translations[currentLanguage]?.Nobackgroundset || translations["en"].Nobackgroundset);
             return;
         }
 
-        const confirmationMessage = translations[currentLanguage]?.clearbackgroundimage || translations["zh"].clearbackgroundimage;
+        const confirmationMessage = translations[currentLanguage]?.clearbackgroundimage || translations["en"].clearbackgroundimage;
         if (await confirmPrompt(confirmationMessage)) {
             try {
                 await clearImageFromIndexedDB();

@@ -113,13 +113,13 @@ async function initializeClock() {
             var month = currentTime.getMonth();
 
             // Define the current language
-            const currentLanguage = getLanguageStatus("selectedLanguage") || "zh";
+            const currentLanguage = getLanguageStatus("selectedLanguage") || "en";
 
             // Get the translated name of the day
-            var dayName = translations[currentLanguage]?.days?.[dayOfWeek] ?? translations["zh"].days[dayOfWeek];
+            var dayName = translations[currentLanguage]?.days?.[dayOfWeek] ?? translations["en"].days[dayOfWeek];
 
             // Get the translated name of the month
-            var monthName = translations[currentLanguage]?.months?.[month] ?? translations["zh"].months[month];
+            var monthName = translations[currentLanguage]?.months?.[month] ?? translations["en"].months[month];
 
             // Localize the day of the month
             var localizedDayOfMonth = localizeNumbers(dayOfMonth.toString(), currentLanguage);
@@ -231,10 +231,10 @@ async function initializeClock() {
         }
 
         // Get the user's language setting
-        const currentLanguage = getLanguageStatus("selectedLanguage") || "zh"; // Default to English
+        const currentLanguage = getLanguageStatus("selectedLanguage") || "en"; // Default to English
 
         // Return the translated greeting is available
-        return translations[currentLanguage]?.greeting?.[greetingKey] ?? translations["zh"].greeting[greetingKey];
+        return translations[currentLanguage]?.greeting?.[greetingKey] ?? translations["en"].greeting[greetingKey];
     }
 
     function updatedigiClock() {
@@ -248,10 +248,10 @@ async function initializeClock() {
         const dayOfWeek = now.getDay(); // Get day of the week (0-6)
         const dayOfMonth = now.getDate(); // Get current day of the month (1-31)
 
-        const currentLanguage = getLanguageStatus("selectedLanguage") || "zh";
+        const currentLanguage = getLanguageStatus("selectedLanguage") || "en";
 
         // Get translated day name
-        let dayName = translations[currentLanguage]?.days?.[dayOfWeek] ?? translations["zh"].days[dayOfWeek];
+        let dayName = translations[currentLanguage]?.days?.[dayOfWeek] ?? translations["en"].days[dayOfWeek];
 
         // Localize the day of the month
         const localizedDayOfMonth = localizeNumbers(dayOfMonth.toString(), currentLanguage);
@@ -286,7 +286,7 @@ async function initializeClock() {
         let period = ""; // For storing AM/PM equivalent
 
         // Array of languages to use "en-US" format
-        const specialLanguages = ["tr", "zh", "zh_TW", "ja", "ko", "hu"]; // Languages with NaN in locale time format
+        const specialLanguages = ["tr", "en", "zh_TW", "ja", "ko", "hu"]; // Languages with NaN in locale time format
         const localizedLanguages = Object.keys(numberMappings);
         // Force the "en-US" format for numeral-localized languages, otherwise, it will be localized twice, resulting in NaN
 

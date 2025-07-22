@@ -406,7 +406,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const adjustZoomInfo = document.getElementById("adjustZoomInfo");
   let adjustZoomInfoText =
     translations[currentLanguage]?.adjustZoomInfo ||
-    translations["zh"].adjustZoomInfo;
+    translations["en"].adjustZoomInfo;
   if (isMac) {
     adjustZoomInfoText = adjustZoomInfoText.replace(/Ctrl/g, "⌘");
   }
@@ -419,19 +419,19 @@ document.addEventListener("DOMContentLoaded", function () {
   if (isFirefoxAll) {
     changeBrowserThemeInfo.innerHTML =
       translations[currentLanguage]?.firefoxThemeInfo ||
-      translations["zh"].firefoxThemeInfo;
+      translations["en"].firefoxThemeInfo;
   } else if (isEdge) {
     changeBrowserThemeInfo.innerHTML =
       translations[currentLanguage]?.edgeThemeInfo ||
-      translations["zh"].edgeThemeInfo;
+      translations["en"].edgeThemeInfo;
   } else if (isBrave) {
     changeBrowserThemeInfo.innerHTML =
       translations[currentLanguage]?.braveThemeInfo ||
-      translations["zh"].braveThemeInfo;
+      translations["en"].braveThemeInfo;
   } else {
     changeBrowserThemeInfo.innerHTML =
       translations[currentLanguage]?.chromeThemeInfo ||
-      translations["zh"].chromeThemeInfo;
+      translations["en"].chromeThemeInfo;
   }
 
   const firefoxHomepage = document.getElementById("firefoxHomepage");
@@ -442,7 +442,7 @@ document.addEventListener("DOMContentLoaded", function () {
     firefoxHomepage.style.display = "block";
     updateFirefoxHomepageInfo.innerHTML =
       translations[currentLanguage]?.updateFirefoxHomepageInfo ||
-      translations["zh"].updateFirefoxHomepageInfo;
+      translations["en"].updateFirefoxHomepageInfo;
   }
 
   // Hide tips

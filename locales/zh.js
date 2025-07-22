@@ -1,4 +1,5 @@
 // Chinese (Simplified)
+//同步英文的键值对翻译所有中文！
 const zh = {
     // 菜单项
     "github": "GitHub",

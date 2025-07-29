@@ -149,9 +149,9 @@ const en = {
     "resetAISettingsBtn": "Reset",
 
     // Theme
-    "enableDarkMode": "Dark Mode (Experimental)",
+    "enableDarkMode": "Dark Mode",
     "enableDarkModeInfo": "Enable dark mode themes",
-    "enableAutoMode": "Auto Mode (Experimental)",
+    "enableAutoMode": "Auto Mode",
     "enableAutoModeInfo": "Enable auto mode themes",
 
     // Wallpaper and settings

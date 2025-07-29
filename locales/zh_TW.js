@@ -149,9 +149,9 @@ const zh_TW = {
     "resetAISettingsBtn": "重設",
 
     // Theme
-    "enableDarkMode": "深色模式（實驗性）",
+    "enableDarkMode": "深色模式",
     "enableDarkModeInfo": "啟用深色模式主題",
-    "enableAutoMode": "自動模式（實驗性）",
+    "enableAutoMode": "自動模式",
     "enableAutoModeInfo": "根據系統主題自動切換深色模式",
 
     // Wallpaper and settings

@@ -49,7 +49,7 @@ function handleClockVisibility() {
     else {
         // Retrieve saved state from localStorage
         const isClockHidden = localStorage.getItem("hideClockVisible") === "true";
-        hideClockCheckbox.checked = isClockHidden;
+        hideClockCheckbox.checked = isClockHidden || false;
 
         // Apply initial state
         applyClockState(isClockHidden);

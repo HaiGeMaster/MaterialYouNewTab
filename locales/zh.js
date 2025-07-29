@@ -1,5 +1,4 @@
 // Chinese (Simplified)
-//同步英文的键值对翻译所有中文！
 const zh = {
     // 菜单项
     "github": "GitHub",
@@ -150,9 +149,9 @@ const zh = {
     "resetAISettingsBtn": "重置",
 
     // 主题
-    "enableDarkMode": "深色模式（实验性）",
+    "enableDarkMode": "深色模式",
     "enableDarkModeInfo": "启用深色主题",
-    "enableAutoMode": "自动模式（实验性）",
+    "enableAutoMode": "自动模式",
     "enableAutoModeInfo": "启用自动切换主题",
 
     // 壁纸和设置

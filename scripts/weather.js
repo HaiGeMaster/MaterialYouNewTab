@@ -725,3 +725,6 @@ minMaxTempCheckbox.addEventListener("change", () => {
   localStorage.setItem("minMaxTempEnabled", isChecked);
   location.reload();
 });
+
+
+//请注意，需要去掉saveCheckboxState、loadCheckboxState

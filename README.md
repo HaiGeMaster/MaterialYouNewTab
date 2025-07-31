@@ -1,3 +1,288 @@
+<!-- 初始化时间：2023年8月20日 星期日 下午3:41:08（印度标准时间） -->
+<h1 align="center">
+
+<a href="https://xengshi.github.io/materialYouNewTab/"><img src="https://i.ibb.co/x11pGSs/icon-128.png" width="50"></a>
+<br>
+Material You 新标签页
+
+</h1>
+<div align="center">
+
+Material You 新标签页是一款功能丰富的浏览器扩展程序，它通过可定制的主题、个性化的问候语以及各种实用工具，为您的新标签页带来个性化体验，同时与您首选的搜索引擎无缝集成。
+
+</div>
+
+<div align="center">
+
+!https://img.shields.io/github/license/XengShi/materialYouNewTab
+!https://img.shields.io/github/last-commit/XengShi/materialYouNewTab
+!https://img.shields.io/github/contributors/XengShi/materialYouNewTab
+!https://img.shields.io/github/stars/XengShi/materialYouNewTab
+!https://img.shields.io/github/forks/XengShi/materialYouNewTab
+
+</div>
+
+<p align="center">
+  <a href="#-功能">功能</a> •
+  <a href="#-安装指南">安装指南</a> •
+  <a href="#下载">下载</a> •
+  <a href="#-当前支持的语言-25种">当前支持的语言</a> •
+  <a href="#-使用方法">使用方法</a>
+<br>
+  <a href="#-贡献">贡献</a> •
+  <a href="#-星标历史">星标历史</a> •
+  <a href="#-问题与支持">问题与支持</a> •
+  <a href="#-隐私政策">隐私政策</a> •
+  <a href="#-许可证">许可证</a>
+</p>
+
+<img src="https://i.postimg.cc/CF43Yzj1/material-you-new-Tab-poster.webp" alt="截图 1" width="100%">
+
+🔴 🟡 🟢 在线体验：https://xengshi.github.io/materialYouNewTab/
+
+✨ 功能
+
+• 可定制主题：从多种主题中选择，匹配您的个人风格。
+
+• 个性化问候语：添加自定义消息或您的名字，每次打开新标签页时都会显示，让体验更个性化。
+
+• 集成搜索：直接从新标签页使用您喜欢的搜索引擎进行搜索 —— 支持 Google、DuckDuckGo、Bing、Brave 搜索或 YouTube。
+
+• 浏览器兼容性：支持主流浏览器，如 Chrome、Edge、Firefox、Brave 和 Opera。
+
+📥 安装指南
+
+下载
+
+1. 开发版本（v3.1.*）
+
+    ◦ 克隆仓库：
+
+      使用以下命令克隆仓库：
+       git clone https://github.com/XengShi/materialYouNewTab.git
+       
+
+    ◦ 或者，点击下方按钮下载最新版本的 ZIP 文件：
+
+      https://img.shields.io/badge/Download-ZIP-blue.svg](https://github.com/XengShi/materialYouNewTab/archive/refs/heads/main.zip)
+
+    ◦ 您也可以在仓库页面上点击 Code 按钮，在下拉菜单中选择 Download ZIP 来下载 ZIP 文件。
+
+2. 稳定版本（v3.1）
+
+<p align="center">
+    <a href="https://github.com/XengShi/materialYouNewTab/archive/refs/tags/v3.zip"><img src="https://img.shields.io/badge/GitHub-blue?style=for-the-badge&logo=github&logoColor=white&labelColor=grey&color=blue" alt="从 GitHub 下载" height="47" /></a>
+    <a href="https://chromewebstore.google.com/detail/material-you-newtab/glloabhodjfmeoccmdngmhkpmdlakfbn"><img src="https://github.com/user-attachments/assets/20a6e44b-fd46-4e6c-8ea6-aad436035753" alt="从 Chrome 应用商店下载" height="48" /></a>
+    <a href="https://addons.mozilla.org/en-US/firefox/addon/material-you-newtab/"><img src="https://github.com/user-attachments/assets/c0e99e6b-97cf-4af2-9737-099db7d3538b" alt="从 Mozilla 扩展商店下载" height="48" /></a>
+    <!-- <a href="https://microsoftedge.microsoft.com/addons/detail/glloabhodjfmeoccmdngmhkpmdlakfbn"><img height="48" src="https://github.com/user-attachments/assets/204157eb-4cae-4c0e-b2cb-db514419fd9e" alt="从 Microsoft Edge 扩展商店下载" /></a> -->
+</p>
+
+安装步骤
+
+!https://img.icons8.com/?size=20&id=104996&format=png&color=000000 基于 Chromium 的浏览器
+
+1. 从 Chrome 应用商店安装：
+
+   • https://chromewebstore.google.com/detail/material-you-newtab/glloabhodjfmeoccmdngmhkpmdlakfbn
+
+   或者 按照以下手动步骤安装：
+
+2. 手动安装：
+
+   • 准备扩展文件夹：
+
+     ◦ 确保您已经克隆了仓库或下载并解压了 ZIP 文件。
+
+   • 打开扩展页面：
+
+     在您喜欢的浏览器地址栏输入以下内容：
+
+     ◦ !https://img.icons8.com/color/20/000000/chrome--v1.png Chrome: chrome://extensions
+
+     ◦ !https://img.icons8.com/?size=20&id=dGm9KIZPpukc&format=png&color=000000 Edge: edge://extensions
+
+     ◦ !https://img.icons8.com/color/20/000000/brave-web-browser.png Brave: brave://extensions
+
+     ◦ !https://img.icons8.com/color/20/000000/opera--v1.png Opera: opera://extensions
+
+   • 启用开发者模式：
+
+     ◦ 在扩展页面中开启 开发者模式。
+
+   • 加载未打包扩展：
+
+     ◦ 点击 加载已解压的扩展程序，然后选择您解压后的扩展文件夹。
+
+3. 仅适用于 !https://img.icons8.com/color/20/000000/opera--v1.png Opera（或 !https://img.icons8.com/color/20/000000/opera-gx.png Opera GX）的额外步骤：
+
+   • 进入 Opera 或 Opera GX 的 设置。
+
+   • 滚动到 启动时 部分。
+
+   • 点击 打开特定页面或一组页面，然后点击 添加新页面。
+
+   • 在 网站 URL 中添加以下内容：
+      chrome-extension://glloabhodjfmeoccmdngmhkpmdlakfbn/index.html
+      
+
+下面是每一步的截图，帮助您直观地完成安装过程。
+
+<img src="https://i.postimg.cc/w6JYypvc/chrome.png" alt="截图 1" width="569">
+<img src="https://i.postimg.cc/0ksR7BKg/edge.png" alt="截图 2" width="569">
+<img src="https://i.postimg.cc/MqPSg5NR/brave.png" alt="截图 3" width="569">
+
+!https://img.icons8.com/color/20/000000/firefox--v1.png Firefox
+
+1. 从 Mozilla 扩展商店安装：
+
+   • https://addons.mozilla.org/en-US/firefox/addon/material-you-newtab/
+
+<img src="https://i.postimg.cc/bPW2fHX7/FireFox.png" alt="截图" width="569">
+
+2. 更新主页：
+
+   • 打开 Firefox 并 获取扩展的 UUID：
+
+      ◦ 将鼠标悬停在新标签页按钮（靠近标签关闭按钮）上，会显示扩展的唯一 ID，格式类似于：0f31e1c1-d63c-4660-b950-8bfbda3bb20a。复制或记下此 ID。
+
+      ◦ 或者，在地址栏输入 about:debugging#/runtime/this-firefox，找到扩展的 UUID。
+
+   • 打开 设置，导航到 主页，或直接在地址栏输入 about:preferences#home。
+
+   • 在 主页和新窗口 部分，选择 自定义网址...。
+
+   • 粘贴以下 URL，并将 ID 替换为您的实际 UUID：
+     moz-extension://e31d6701-f699-414f-bb4c-8fde495c432e/index.html
+     
+
+   • 这将同时更新您的主页和新标签页为该扩展。
+
+3. 手动安装（临时）：
+
+   • 克隆仓库或下载并解压 ZIP 文件。
+
+   • 修改 Manifest 文件：
+
+     ◦ 删除现有的 manifest.json 文件。
+
+     ◦ 将 manifest(firefox).json 重命名为 manifest.json。
+
+   • 加载临时扩展：
+
+     ◦ 访问 about:debugging#/runtime/this-firefox，选择 "This Firefox"，然后点击 加载临时扩展。
+
+     ◦ 浏览并选择更新后的 manifest.json 文件。
+
+<!-- #### !https://img.icons8.com/color/20/000000/safari--v1.png Safari -->
+
+安装视频
+
+如需逐步安装指导，请观看此 https://youtu.be/P4ryQPixfw8。
+
+https://img.youtube.com/vi/P4ryQPixfw8/0.jpg](https://youtu.be/P4ryQPixfw8)
+
+🌐 当前支持的语言（25 种）
+
+语言 代码 翻译者
+
+<img src='https://flagcdn.com/us.svg' width=20> &nbsp; 英语 en https://github.com/XengShi/, https://github.com/prem-k-r/
+
+<img src='https://flagcdn.com/az.svg' width=20> &nbsp; 阿塞拜疆语 - Azərbaycanca az https://github.com/hasanbakhtiar/
+
+<img src='https://flagcdn.com/bd.svg' width=20> &nbsp; 孟加拉语 - বাংলা bn https://github.com/itz-rj-here/, https://github.com/prem-k-r/
+
+<img src='https://flagcdn.com/cn.svg' width=20> &nbsp; 简体中文 - Chinese (Simplified) zh-CN https://github.com/Guy-Berryman, https://github.com/TIANLI0, https://github.com/HaiGeMaster
+
+<img src='https://flagcdn.com/tw.svg' width=20> &nbsp; 繁体中文 - Chinese (Traditional) zh-TW https://github.com/Eddie40802
+
+<img src='https://flagcdn.com/cz.svg' width=20> &nbsp; 捷克语 - Čeština cz https://github.com/ceskyDJ/
+
+<img src='https://flagcdn.com/fr.svg' width=20> &nbsp; 法语 - Français fr https://github.com/iamwinner422
+
+<img src='https://flagcdn.com/de.svg' width=20> &nbsp; 德语 - Deutsch de https://github.com/prem-k-r/(MTL)
+
+<img src='https://flagcdn.com/in.svg' width=20> &nbsp; 印地语 - हिंदी hi https://github.com/XengShi/, https://github.com/prem-k-r/
+
+<img src='https://flagcdn.com/hu.svg' width=20> &nbsp; 匈牙利语 - Magyar hu https://github.com/Zan1456/
+
+<img src='https://flagcdn.com/id.svg' width=20> &nbsp; 印尼语 - Bahasa Indonesia idn https://github.com/Ayyas-RF/
+
+<img src='https://flagcdn.com/it.svg' width=20> &nbsp; 意大利语 - Italiano it https://github.com/ZiClaud/
+
+<img src='https://flagcdn.com/jp.svg' width=20> &nbsp; 日语 - 日本語 ja https://github.com/XengShi/, https://github.com/S-H-Y-A/
+
+<img src='https://flagcdn.com/kr.svg' width=20> &nbsp; 韩语 - 한국어 ko https://github.com/XengShi/
+
+<img src='https://flagcdn.com/in.svg' width=20> &nbsp; 马拉地语 - मराठी mr https://github.com/prem-k-r/, https://github.com/konprtk
+
+<img src='https://flagcdn.com/np.svg' width=20> &nbsp; 尼泊尔语 - नेपाली np https://github.com/sthaB-kash/
+
+<img src='https://flagcdn.com/ir.svg' width=20> &nbsp; 波斯语 - فارسی fa https://github.com/AMIRHOSSEIN-AHMADI-IR
+
+<img src='https://flagcdn.com/br.svg' width=20> &nbsp; 葡萄牙语 - Português pt-BR https://github.com/MestreWalla/
+
+<img src='https://flagcdn.com/ru.svg' width=20> &nbsp; 俄语 - Русский ru https://github.com/giwih/
+
+<img src='https://flagcdn.com/si.svg' width=20> &nbsp; 斯洛文尼亚语 - Slovenščina sl-SI https://github.com/Linux-Alex/
+
+<img src='https://flagcdn.com/es.svg' width=20> &nbsp; 西班牙语 - Español es-ES https://github.com/XengShi/
+
+<img src='https://flagcdn.com/tr.svg' width=20> &nbsp; 土耳其语 - Türkçe tr https://github.com/Nobody9512, https://github.com/kerimlcr
+
+<img src='https://flagcdn.com/pk.svg' width=20> &nbsp; 乌尔都语 - اردو ur https://github.com/asfand-dev
+
+<img src='https://flagcdn.com/uz.svg' width=20> &nbsp; 乌兹别克语 - O'zbek uz https://github.com/Firdavs9512/
+
+<img src='https://flagcdn.com/vn.svg' width=20> &nbsp; 越南语 - Tiếng Việt vn https://github.com/diepdo1810/, https://github.com/Tuan1-2-3
+
+查看 https://xengshi.github.io/materialYouNewTab/tools/languagesAnalysis.html，了解已完成的语言和缺失字符串的分析。
+
+<h2>📖 使用方法</h2>
+
+🤝 贡献
+
+欢迎贡献！如果您想参与贡献：
+
+1. 遵循 ./CONTRIBUTING.md 文件中的指南。
+2. Fork 该仓库。
+3. 创建一个新分支：git checkout -b feature/YourFeature。
+4. 提交您的更改：git commit -m 'Add Your Feature'。
+5. 推送至分支：git push origin feature/YourFeature。
+6. 开启一个 Pull Request。
+
+⭐ 星标历史
+
+这里是 Material You 新标签页 仓库的星标历史图表。它展示了随时间增长的星标数量，反映了项目日益增长的影响力和支持度。
+
+<a href="https://star-history.com/#XengShi/materialYouNewTab&Date">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=XengShi/materialYouNewTab&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=XengShi/materialYouNewTab&type=Date" />
+   <img alt="星标历史图表" src="https://api.star-history.com/svg?repos=XengShi/materialYouNewTab&type=Date" />
+ </picture>
+</a>
+
+❓ 问题与支持
+
+• 如果您遇到任何问题或错误，欢迎在 https://github.com/XengShi/materialYouNewTab/issues 上开启一个问题。
+
+• 如需一般性问题或支持，您可以通过 Telegram 群组 联系仓库维护者：https://t.me/+i-ekvlM7yoU1Yjc1。
+
+🛡 隐私政策
+
+Material You 新标签页尊重您的隐私。更多详情请阅读我们的 https://xengshi.github.io/materialYouNewTab/privacy-policy.html。
+
+📜 许可证
+
+版权所有 (C) 2023-2025 XengShi
+
+本项目采用 GNU 通用公共许可证 v3.0（GPL-3.0）。详见 https://github.com/XengShi/materialYouNewTab/blob/main/LICENSE 文件。
+
+https://github.com/XengShi &nbsp; https://t.me/xengshi &nbsp; mailto:xengshi@outlook.com
+
+
+
+
 <!-- Initialized : Sun 20 Aug 2023 03:41:08 PM IST -->
 <h1 align="center">
 
@@ -310,3 +595,9 @@ Copyright (C) 2023-2025 XengShi
 This project is licensed under the GNU General Public License v3.0 (GPL-3.0). See the [LICENSE](https://github.com/XengShi/materialYouNewTab/blob/main/LICENSE) file for details.
 
 [GitHub](https://github.com/XengShi) &nbsp; [Telegram](https://t.me/xengshi) &nbsp; [Email](mailto:xengshi@outlook.com)
+
+
+
+
+
+
